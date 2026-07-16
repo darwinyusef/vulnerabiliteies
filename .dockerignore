@@ -1,0 +1,40 @@
+# Control de versiones
+.git/
+.gitignore
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Datos locales de desarrollo
+*.db
+*.log
+*.sqlite
+
+# Scripts de pentesting (corren en el HOST, no en el contenedor)
+pentesting_scripts/
+
+# Documentación (no necesaria en la imagen)
+GUIA_ESTUDIANTES.md
+OWASP_TOP10.md
+
+# Entorno virtual
+.venv/
+venv/
+env/
+
+# Setup antiguo (el Dockerfile y compose están ahora en la raíz)
+setup/Dockerfile
+setup/docker-compose.yml
+
+# Editor
+.DS_Store
+*.swp
+.idea/
+.vscode/
