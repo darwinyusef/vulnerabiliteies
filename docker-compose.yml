@@ -6,8 +6,8 @@ services:
     image: vulnlab:latest
     container_name: vulnlab
     ports:
-      # Puerto 5000 en macOS lo usa AirPlay Receiver — usamos 8080 en el host
-      - "8080:5000"
+      # Puerto 8080 ocupado por otro proyecto — VulnLab usa 8888
+      - "8888:5000"
     environment:
       DB_PATH: /app/data/users.db
       UPLOAD_DIR: /tmp/uploads
